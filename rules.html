@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <!-- Link for Bootsrap -->
+    <!-- JavaScript code for Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong>Sudoku Solver</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav-rul">
+                    <a id="btg" class="nav-link active" aria-current="page" href="#">Back To Game</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="title">
+        <h2><strong>How To Play</strong></h3>
+    </section>
+    <hr class="s1">
+    <section class="rules">
+
+        <div class="rule1">
+            <h3 class="r"><strong>Rule No.1</strong> Use numbers from 1 to 9</h3>
+            <container>
+                Sudoku is played on a grid of 9 x 9 spaces. Each row, column and square (9 spaces each) needs to be
+                filled out with the numbers 1-9, without repeating any numbers within the row, column or square.
+            </container>
+        </div>
+        <div class="rule2">
+            <h3 class="r"><strong>Rule No.2</strong> Not to repeat any numbers</h3>
+            <container>
+                As you can see, in the upper left square (circled in blue), this square already has 4 out of the 9
+                spaces filled in. The only numbers missing from the square are 2,3,4,5 and 7. By seeing which numbers
+                are
+                missing from each square, row, or column, we can use process of elimination and deductive reasoning to
+                decide which numbers need to go in each blank space.
+                <img class="divs" src="images/rule2.png" alt="Rule2">
+            </container>
+        </div>
+        <div class="rule3">
+            <h3 class="r"><strong>Rule No.3</strong> Sudoku doesn't requires guessing</h3>
+            <container>
+                Sudoku is a game of logic and reasoning, so you shouldn’t have to guess. If you don’t know what number
+                to put in a certain space, keep scanning the other areas of the grid until you seen an opportunity to
+                place a number. But don’t try to “force” anything – Sudoku rewards patience, insights, and recognition
+                of patterns, not blind luck or guessing.
+            </container>
+        </div>
+        <div class="rule4">
+            <h3 class="r"><strong>Rule No.4</strong> Use process of elimination</h3>
+            <container>
+                In this Sudoku grid (shown below), in the upper left square (circled in blue),it is missing only a few
+                numbers: 2,3,4,5 and 7.
+                One way to figure out which numbers can go in each space is to use “process of elimination” by checking
+                to see which other numbers are already included within each square,since there can be no duplication of
+                numbers 1-9 within each square (or row or column).
+                <br>
+                <img class="divs" src="images/rule4.png" alt="rule4">
+                <br>
+                In this case, we can quickly notice that there are already number 7s and 2s in the first row and
+                first
+                column of the Sudoku grid. This means that we are left with 3,4 and 5 to be filled in the
+                top-left
+                square.
+                Now,observing the second column of the upper left square, we can't place 4 or 5,as it is already
+                present
+                in the entire column. Thus, we are left with 3 only to be filled at that position(circled in
+                green).
+                <br>
+                This is how the process of
+                elimination works in Sudoku – you find out which spaces are available, which numbers are missing
+                – and
+                then deduce, based on the position of those numbers within the grid, which numbers fit into each
+                space.
+            </container>
+        </div>
+        <hr class="s1">
+        <div class="er">
+            <h3 class="r">End of Rules</h3>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="js/script1.js"></script>
+</body>
+
+</html>
